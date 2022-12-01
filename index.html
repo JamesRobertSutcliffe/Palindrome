@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" 
+    href="palindrome.css" 
+     href="https://fonts.googleapis.com/css?family=Roboto">        
+</head>
+<body>
+<header>
+    <h1>Palindrome Checker</h1>
+  </header>
+  <div>
+    <textarea id="text1" name="Enter" rows="4" cols="50"></textarea></textarea><br><br>
+    <button id="btn1" type="button">Submit!</button>
+        </div>
+        <div id="post"></div>
+
+
+<!-- <script>
+function palindrome(){
+    let entry = document.getElementById('text1').value;
+    let cleanEntry = entry.replace(/[^a-zA-Z0-9 ]/g, '');
+    let lowerCaseEntry = cleanEntry.toLowerCase();
+    //create reverse of lower case entry//
+ let reverseString = lowerCaseEntry.split("").reverse().join("");
+    // Write html with dom apppending result - also state entry // 
+if (lowerCaseEntry === reverseString) {
+    console.log("Yes it's a bloody Palindrome!");
+} else {
+    console.log("No Palindrome today cowboy!");
+}
+ 
+}
+
+const chips = document.getElementById('btn1');
+chips.addEventListener('click', palindrome);
+</script> -->
+
+
+<script src="palindrome.js"></script>
+</body>
+
+
+
+
+</html>
+
+<!-- 
+Algorithm: check if entry is a Palindrome
+
+
+Tasks:
+Create form for user entry
+display whether or not entry is or is not Palindrome
+
+
+Pattern recognition:
+Create form for user entry
+remove illegal / special characters from entry
+reverse string entry
+compare entry with reversed entry
+state whether entry matches reverse (is a palindrome!) / do not match (is not a Palindrome)
+
+Abstraction:
+do not include special character 
+do not include single letter words 
+
+sequene:
+
+1 - function: declare variable from user entry using DOM 
+2 - function: remove illegal characters (work out how to do this) then reverse sring (string.reverse)
+3 - function: compare:
+conditional: if (reversed entry = entry) {
+    return: entry is a palindrome 
+} else {
+    entry is not a palindrome
+}
+
+-->
+
+
